@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen190dp"
+    android:background="@drawable/backgroundheader">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoNavigation"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/logodangnhap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp" />
+
+    <TextView
+        android:id="@+id/txtTenNV_NavigationView"
+        android:text="Tên Nhân Viên"
+        android:textStyle="bold"
+        android:textSize="@dimen/size18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/logoNavigation"
+        android:layout_below="@+id/logoNavigation" />
+
+    <TextView
+        android:id="@+id/txtEmail_NavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/logoNavigation"
+        android:layout_below="@+id/txtTenNV_NavigationView"
+        android:text="huydaica@gmail.com"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+</RelativeLayout>

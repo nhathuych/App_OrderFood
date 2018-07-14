@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen">
+
+    <TextView
+        android:text="Thêm thực đơn"
+        android:textStyle="bold"
+        android:textSize="@dimen/size30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen30dp"
+        android:layout_marginBottom="@dimen/dimen30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edtTenMonAn"
+                android:hint="@string/themmonan"
+                android:paddingLeft="@dimen/dimen5dp"
+                android:paddingRight="@dimen/dimen5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtGiaTien"
+                android:hint="@string/giatien"
+                android:paddingLeft="@dimen/dimen5dp"
+                android:paddingRight="@dimen/dimen5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spnLoaiMonAn"
+                    android:paddingLeft="@dimen/dimen5dp"
+                    android:paddingRight="@dimen/dimen5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen50dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/imgThemLoaiThucDon"
+                    android:src="@android:drawable/ic_input_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgHinhThucDon"
+            android:src="@drawable/logodangnhap"
+            android:paddingLeft="@dimen/dimen5dp"
+            android:paddingRight="@dimen/dimen5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnXacNhanThemMonAn"
+            android:text="@string/xacnhan"
+            android:paddingLeft="@dimen/dimen5dp"
+            android:paddingRight="@dimen/dimen5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnThoatThemMonAn"
+            android:text="@string/thoat"
+            android:paddingLeft="@dimen/dimen5dp"
+            android:paddingRight="@dimen/dimen5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
